@@ -1,7 +1,9 @@
 # music-landing-page
 
 ## 📌 Description
-The Music Landing Page is a simple, interactive webpage that introduces users to various music genres. It features a clean, modern design with visually appealing elements like an image gallery, informative sections about different music genres, and an interactive button for users to share their favourite genre. The page is responsive, ensuring a great user experience across devices.
+This project is a simple music-themed landing page that introduces visitors to different music genres and provides an interactive way for users to share their favourite music genre. The page features an aesthetically pleasing design with a vibrant background, smooth animations, and a gallery showcasing various music genres, including Rock, Jazz, Hip Hop, Rap, Pop, and Country.
+
+The landing page includes an "About Music" section, detailed descriptions of various music genres, and a button for users to share their favourite genre. There's also a gallery with images representing each genre, as well as a footer with links to further explore music on platforms like Spotify. The page is responsive, ensuring a great user experience across devices.
 
 ## 🛠 Prerequisites
 A web browser (Chrome, Firefox, Safari, etc.) to view the page.
