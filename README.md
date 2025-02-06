@@ -47,6 +47,7 @@ Below is a preview of Music Landing Page:
 
 ## 👥 Credit
 Spotify for music streaming and inspiration.
+
 Image assets are sourced from public image URLs.
 
 ## 📜 License
