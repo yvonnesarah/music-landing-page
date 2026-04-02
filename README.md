@@ -45,6 +45,16 @@ Application can be viewed here:
 Below is a preview of Music Landing Page:
 ![Screenshot](assets/images/music-landing-page.png "Music Landing Page")
 
+## 🚀 Future Improvements
+* 🎧 Music Preview Integration - Embed playable music snippets (e.g., via Spotify API) so users can listen to sample tracks from each genre directly on the page.
+* 📝 User Submissions Display - Store and display users’ favourite genres dynamically, creating a shared community section.
+* 🔍 Search & Filter Functionality - Allow users to search and filter music genres for quicker navigation and discovery.
+* 🌙 Dark/Light Mode Toggle - Add a theme switcher to improve accessibility and user preference.
+* 📱 Enhanced Mobile Experience - Further optimize animations and layouts specifically for smaller screens.
+* 💾 Local Storage Support - Save user preferences (name and favourite genre) locally so they persist across sessions.
+* 🌐 Backend Integration - Connect to a backend service to store user data and enable more interactive features.
+* 🎵 Expanded Genre Library - Add more genres and subgenres with richer descriptions and visuals.
+
 ## 👥 Credit
 Spotify for music streaming and inspiration.
 
