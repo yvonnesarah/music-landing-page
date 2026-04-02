@@ -6,8 +6,12 @@ This project is a simple music-themed landing page that introduces visitors to d
 The landing page includes an "About Music" section, detailed descriptions of various music genres, and a button for users to share their favourite genre. There's also a gallery with images representing each genre, as well as a footer with links to further explore music on platforms like Spotify. The page is responsive, ensuring a great user experience across devices.
 
 ## 🛠 Prerequisites
-A web browser (Chrome, Firefox, Safari, etc.) to view the page.
-No specific server setup is required as this is a static HTML, CSS, and JavaScript project.
+To run and interact with this project, ensure you have:
+* 🌐 A modern web browser such as Chrome, Firefox, Safari, or Edge
+* 📶 An active internet connection (required for loading external images and links like Spotify)
+* 🧠 Basic understanding of web navigation (optional, for better user interaction)
+
+No installation, build tools, or server setup is required since this is a static web application.
 
 ## 📋 Features
 * A clean, visually appealing design using a modern gradient background.
@@ -56,9 +60,13 @@ Below is a preview of Music Landing Page:
 * 🎵 Expanded Genre Library - Add more genres and subgenres with richer descriptions and visuals.
 
 ## 👥 Credit
-Spotify for music streaming and inspiration.
+This project makes use of the following resources:
 
-Image assets are sourced from public image URLs.
+🎵 Spotify – for music inspiration and external music exploration links
+
+🖼 Public Image Sources – genre-related images used in the gallery (via external URLs)
+
+💡 Open Web Resources – for general information about music genres and design inspiration
 
 ## 📜 License
 This project is open-source. For licensing details, please refer to the LICENSE file in the repository.
