@@ -9,7 +9,7 @@ The landing page includes an "About Music" section, detailed descriptions of var
 A web browser (Chrome, Firefox, Safari, etc.) to view the page.
 No specific server setup is required as this is a static HTML, CSS, and JavaScript project.
 
-## 📋 Criteria
+## 📋 Features
 * A clean, visually appealing design using a modern gradient background.
 * Interactive elements like buttons to engage with users.
 * Images of different music genres with captions and smooth hover effects.
