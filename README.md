@@ -64,8 +64,8 @@ After Design
 Music Landing Page
 ![Screenshot](assets/images/after/music-landing-page.png "Music Landing Page")
 
-Share Favourite
-![Screenshot](assets/images/after/music-landing-page-share.png "Share Favourite")
+Share Your Favourite
+![Screenshot](assets/images/after/music-landing-page-share.png "Share Your Favourite")
 
 Popular Artists
 ![Screenshot](assets/images/after/music-landing-page-popular-artists.png "Popular Artists")
