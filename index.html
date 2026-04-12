@@ -13,6 +13,13 @@ body{
   background: linear-gradient(135deg,#1db954,#191414);
   color:white;
   line-height:1.6;
+  transition:0.3s;
+}
+
+/* LIGHT MODE */
+body.light{
+  background: linear-gradient(135deg,#f5f5f5,#dddddd);
+  color:#111;
 }
 
 .container{
@@ -24,11 +31,6 @@ body{
   text-align:center;
   margin-bottom:40px;
   padding:20px;
-}
-
-h1{
-  font-size:50px;
-  font-weight:bold;
 }
 
 h2{
@@ -65,6 +67,11 @@ a:hover{
   box-shadow:0 5px 15px rgba(0,0,0,0.4);
 }
 
+body.light .section{
+  background: linear-gradient(135deg,#ffffff,#eeeeee);
+  border:1px solid #ccc;
+}
+
 button{
   margin-top:15px;
   padding:12px 25px;
@@ -89,6 +96,11 @@ button:hover{
   border:1px solid white;
   box-shadow:0 4px 10px rgba(0,0,0,0.4);
   font-size:18px;
+}
+
+body.light #result{
+  background: linear-gradient(135deg,#e0e0e0,#ffffff);
+  color:#111;
 }
 
 .gallery{
@@ -121,16 +133,27 @@ button:hover{
   font-size:18px;
   font-weight:bold;
 }
+
+/* TOGGLE BUTTON */
+.theme-toggle{
+  position:fixed;
+  top:15px;
+  right:15px;
+  padding:10px 15px;
+  font-size:14px;
+}
 </style>
 
 </head>
 
 <body>
 
+<button class="theme-toggle" id="themeToggle">🌙 Toggle Mode</button>
+
 <div class="container">
 
   <div class="hero">
-    <h1>Welcome to the Music World</h1>
+    <h2>Welcome to the Music World</h2>
 
     <p>
       Explore the power of <strong>music</strong>. <em>Music connects people everywhere.</em>
@@ -246,6 +269,7 @@ button:hover{
 <script>
 let button = document.getElementById("genreButton");
 let result = document.getElementById("result");
+let themeToggle = document.getElementById("themeToggle");
 
 button.addEventListener("click", function () {
 
@@ -266,6 +290,11 @@ button.addEventListener("click", function () {
     alert("Please fill in all fields!");
   }
 
+});
+
+// THEME TOGGLE
+themeToggle.addEventListener("click", function(){
+  document.body.classList.toggle("light");
 });
 </script>
 
