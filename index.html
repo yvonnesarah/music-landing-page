@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -134,6 +134,19 @@ body.light #result{
   font-weight:bold;
 }
 
+/* Spotify embeds */
+.spotify-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+}
+
+.spotify-grid iframe{
+  border-radius:12px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.5);
+}
+
 /* TOGGLE BUTTON */
 .theme-toggle{
   position:fixed;
@@ -162,6 +175,9 @@ body.light #result{
     <a href="https://www.spotify.com" target="_blank">Explore More Music</a>
   </div>
 
+  <hr>
+
+  <!-- ABOUT -->
   <hr>
 
   <div class="section">
@@ -248,21 +264,61 @@ body.light #result{
   <div class="gallery">
 
     <div class="genre">
-      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/197/original/pop.jpg" alt="Pop music">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/197/original/pop.jpg">
       <span>Pop</span>
     </div>
 
     <div class="genre">
-      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/195/original/hip-hop.jpg" alt="Hip hop music">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/195/original/hip-hop.jpg">
       <span>Hip-Hop</span>
     </div>
 
     <div class="genre">
-      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/196/original/rap.jpg" alt="Rap music">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/196/original/rap.jpg">
       <span>Rap</span>
     </div>
 
   </div>
+
+  <!-- 🎧 MUSIC PREVIEW  -->
+<div class="section">
+  <h2>🎧 Music Preview </h2>
+  <p>Listen to a featured artist from each genre below.</p>
+
+  <div class="spotify-grid">
+
+    <!-- POP (Taylor Swift) -->
+    <div>
+      <h3>Pop 🎤 - Taylor Swift</h3>
+      <iframe style="width:300px;height:380px"
+        src="https://open.spotify.com/embed/artist/06HL4z0CvFAxyc27GXpf02"
+        frameborder="0"
+        allow="encrypted-media">
+      </iframe>
+    </div>
+
+    <!-- HIP-HOP (Drake) -->
+    <div>
+      <h3>Hip-Hop 🎧 - Drake</h3>
+      <iframe style="width:300px;height:380px"
+        src="https://open.spotify.com/embed/artist/3TVXtAsR1Inumwj472S9r4"
+        frameborder="0"
+        allow="encrypted-media">
+      </iframe>
+    </div>
+
+    <!-- RAP (Eminem) -->
+    <div>
+      <h3>Rap 🔥 - Eminem</h3>
+      <iframe style="width:300px;height:380px"
+        src="https://open.spotify.com/embed/artist/7dGJo4pcD2V6oG8kP0tJRR"
+        frameborder="0"
+        allow="encrypted-media">
+      </iframe>
+    </div>
+
+  </div>
+</div>
 
 </div>
 
