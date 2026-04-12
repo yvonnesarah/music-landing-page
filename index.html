@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Landing Page</title>
+
+<style>
+body{
+  margin:0;
+  padding:0;
+  font-family:Arial, sans-serif;
+  background: linear-gradient(135deg,#1db954,#191414);
+  color:white;
+  line-height:1.6;
+}
+
+.container{
+  margin:30px;
+  padding:20px;
+}
+
+.hero{
+  text-align:center;
+  margin-bottom:40px;
+  padding:20px;
+}
+
+h1{
+  font-size:50px;
+  font-weight:bold;
+}
+
+h2{
+  font-size:28px;
+  font-weight:bold;
+}
+
+p{
+  font-size:18px;
+  line-height:1.6;
+}
+
+a{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 20px;
+  background: linear-gradient(90deg,#1db954,#1ed760);
+  color:white;
+  text-decoration:none;
+  border:1px solid white;
+  box-shadow:0 4px 10px rgba(0,0,0,0.4);
+  transition:0.3s;
+}
+
+a:hover{
+  transform:scale(1.05);
+}
+
+.section{
+  margin:20px 0;
+  padding:25px;
+  background: linear-gradient(135deg,#222,#111);
+  border:1px solid #444;
+  box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+button{
+  margin-top:15px;
+  padding:12px 25px;
+  font-size:16px;
+  font-weight:bold;
+  color:white;
+  background: linear-gradient(90deg,#1db954,#1ed760);
+  border:1px solid white;
+  box-shadow:0 4px 10px rgba(0,0,0,0.4);
+  transition:0.3s;
+  cursor:pointer;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+#result{
+  margin-top:15px;
+  padding:15px;
+  background: linear-gradient(135deg,#1db954,#191414);
+  border:1px solid white;
+  box-shadow:0 4px 10px rgba(0,0,0,0.4);
+  font-size:18px;
+}
+
+.gallery{
+  text-align:center;
+  margin-top:30px;
+}
+
+.genre{
+  display:inline-block;
+  margin:20px;
+  padding:10px;
+}
+
+.genre img{
+  width:220px;
+  height:220px;
+  object-fit:cover;
+  border:2px solid white;
+  box-shadow:0 6px 15px rgba(0,0,0,0.5);
+  transition:0.4s;
+}
+
+.genre img:hover{
+  transform:scale(1.1);
+}
+
+.genre span{
+  display:block;
+  margin-top:10px;
+  font-size:18px;
+  font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="hero">
+    <h1>Welcome to the Music World</h1>
+
+    <p>
+      Explore the power of <strong>music</strong>. <em>Music connects people everywhere.</em>
+    </p>
+
+    <a href="https://www.spotify.com" target="_blank">Explore More Music</a>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>About Music</h2>
+
+    <p>
+      <strong>Music</strong> is a universal language that connects people across the world.<br>
+      It is made up of sounds, rhythms, and melodies that can express emotions without words.
+    </p>
+
+    <p>
+      Music can make people feel <em>happy, sad, excited, or calm</em>.<br>
+      It is used in movies, concerts, celebrations, and everyday life.
+    </p>
+
+    <p>
+      From ancient drums to modern digital beats, music has evolved over time but remains an important part of human culture.
+    </p>
+
+    <p>
+      It brings people together, inspires creativity, and helps us express who we are.
+    </p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>Top 5 Popular Music Genres</h2>
+
+    <p>
+      <strong>1. Pop</strong> – Catchy music.<br>
+      <strong>2. Hip-Hop</strong> – Beats & rap.<br>
+      <strong>3. Rap</strong> – Storytelling.<br>
+      <strong>4. R&B</strong> – Soulful sound.<br>
+      <strong>5. Reggae</strong> – Chill vibes.
+    </p>
+  </div>
+
+  <hr>
+
+  <!-- INTERACTION -->
+  <div class="section">
+    <p>Click below and tell us your favourite music genre and artist!</p>
+    <button id="genreButton">Share Your Favourite</button>
+
+    <p id="result"></p>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>Popular Artists</h2>
+
+    <h2>Pop Artists 🎤</h2>
+    <p>
+      <strong>Taylor Swift</strong> – Storytelling pop hits.<br>
+      <strong>Ed Sheeran</strong> – Acoustic love songs.<br>
+      <strong>Dua Lipa</strong> – Dance-pop energy.
+    </p>
+
+    <hr>
+
+    <h2>Hip-Hop Artists 🎧</h2>
+    <p>
+      <strong>Kendrick Lamar</strong> – Deep lyrical storytelling.<br>
+      <strong>Drake</strong> – Global rap & R&B hits.<br>
+      <strong>Travis Scott</strong> – Energetic performances.
+    </p>
+
+    <hr>
+
+    <h2>Rap Artists 🔥</h2>
+    <p>
+      <strong>Eminem</strong> – Fast lyrical rap legend.<br>
+      <strong>Jay-Z</strong> – Iconic music mogul.<br>
+      <strong>Nicki Minaj</strong> – Unique flow and style.
+    </p>
+
+  </div>
+
+  <hr>
+
+  <!-- GALLERY -->
+  <div class="gallery">
+
+    <div class="genre">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/197/original/pop.jpg" alt="Pop music">
+      <span>Pop</span>
+    </div>
+
+    <div class="genre">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/195/original/hip-hop.jpg" alt="Hip hop music">
+      <span>Hip-Hop</span>
+    </div>
+
+    <div class="genre">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/196/original/rap.jpg" alt="Rap music">
+      <span>Rap</span>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+let button = document.getElementById("genreButton");
+let result = document.getElementById("result");
+
+button.addEventListener("click", function () {
+
+  let name = prompt("What is your name?");
+  let genre = prompt("Your favourite genre?");
+  let artist = prompt("Your favourite artist?");
+
+  if (name && genre && artist) {
+
+    alert("Thanks " + name + "! 🎵");
+
+    result.innerHTML =
+      "<strong>Hello " + name + "!</strong><br>" +
+      "Genre: <em>" + genre + "</em><br>" +
+      "Artist: <em>" + artist + "</em>";
+
+  } else {
+    alert("Please fill in all fields!");
+  }
+
+});
+</script>
+
+</body>
+</html>
