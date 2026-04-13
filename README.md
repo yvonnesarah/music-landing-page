@@ -82,6 +82,7 @@ Designed and developed by Yvonne Adedeji.
 This project makes use of the following resources:
 
 🎵 Spotify – Embedded music previews and inspiration
+
 🖼 Public Image Sources – Music genre visuals
 
 ## 📜 License
