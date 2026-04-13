@@ -80,10 +80,9 @@ Music Preview - Light Mode - Toggle
 Designed and developed by Yvonne Adedeji.
 
 This project makes use of the following resources:
+* 🎵 Spotify – Embedded music previews and inspiration
 
-🎵 Spotify – Embedded music previews and inspiration
-
-🖼 Public Image Sources – Music genre visuals
+* 🖼 Public Image Sources – Music genre visuals
 
 ## 📜 License
 This project is open-source. For licensing details, please refer to the LICENSE file in the repository.
