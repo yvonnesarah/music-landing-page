@@ -6,6 +6,10 @@
 <title>Music Landing Page</title>
 
 <style>
+
+/* =========================
+   GLOBAL STYLES
+   ========================= */
 body{
   margin:0;
   padding:0;
@@ -16,36 +20,44 @@ body{
   transition:0.3s;
 }
 
-/* LIGHT MODE */
+/* Light mode theme */
 body.light{
   background: linear-gradient(135deg,#f5f5f5,#dddddd);
   color:#111;
 }
 
-/* CONTAINER */
+/* =========================
+   LAYOUT CONTAINER
+   ========================= */
 .container{
   margin:20px auto;
   padding:20px;
   max-width:1200px;
 }
 
-/* HERO */
+/* =========================
+   HERO SECTION
+   ========================= */
 .hero{
   text-align:center;
   margin-bottom:40px;
   padding:20px;
 }
 
+/* Headings */
 h2{
   font-size:clamp(20px, 3vw, 28px);
   font-weight:bold;
 }
 
+/* Paragraph text */
 p{
   font-size:clamp(14px, 2vw, 18px);
 }
 
-/* BUTTON / LINK */
+/* =========================
+   BUTTONS & LINKS
+   ========================= */
 a, button{
   display:inline-block;
   margin-top:10px;
@@ -60,11 +72,14 @@ a, button{
   border-radius:8px;
 }
 
+/* Hover effect */
 a:hover, button:hover{
   transform:scale(1.05);
 }
 
-/* SECTIONS */
+/* =========================
+   CONTENT SECTIONS
+   ========================= */
 .section{
   margin:20px 0;
   padding:25px;
@@ -74,12 +89,15 @@ a:hover, button:hover{
   border-radius:12px;
 }
 
+/* Light mode section styling */
 body.light .section{
   background: linear-gradient(135deg,#ffffff,#eeeeee);
   border:1px solid #ccc;
 }
 
-/* RESULT BOX */
+/* =========================
+   RESULT BOX (JS OUTPUT)
+   ========================= */
 #result{
   margin-top:15px;
   padding:15px;
@@ -89,12 +107,15 @@ body.light .section{
   font-size:16px;
 }
 
+/* Light mode result box */
 body.light #result{
   background: linear-gradient(135deg,#e0e0e0,#ffffff);
   color:#111;
 }
 
-/* GALLERY */
+/* =========================
+   IMAGE GALLERY
+   ========================= */
 .gallery{
   display:flex;
   flex-wrap:wrap;
@@ -109,6 +130,7 @@ body.light #result{
   max-width:250px;
 }
 
+/* Genre images */
 .genre img{
   width:100%;
   height:220px;
@@ -119,10 +141,12 @@ body.light #result{
   border-radius:10px;
 }
 
+/* Hover zoom effect */
 .genre img:hover{
   transform:scale(1.05);
 }
 
+/* Genre label */
 .genre span{
   display:block;
   margin-top:10px;
@@ -130,7 +154,9 @@ body.light #result{
   font-weight:bold;
 }
 
-/* SPOTIFY GRID RESPONSIVE */
+/* =========================
+   SPOTIFY EMBEDS GRID
+   ========================= */
 .spotify-grid{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -146,7 +172,9 @@ body.light #result{
   box-shadow:0 6px 15px rgba(0,0,0,0.5);
 }
 
-/* TOGGLE BUTTON */
+/* =========================
+   THEME TOGGLE BUTTON
+   ========================= */
 .theme-toggle{
   position:fixed;
   top:10px;
@@ -156,7 +184,9 @@ body.light #result{
   z-index:1000;
 }
 
-/* MOBILE FIXES */
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
 @media (max-width:768px){
 
   .container{
@@ -191,10 +221,14 @@ body.light #result{
 
 <body>
 
+<!-- Theme toggle button -->
 <button class="theme-toggle" id="themeToggle">🌙 Toggle Mode</button>
 
 <div class="container">
 
+  <!-- =========================
+       HERO SECTION
+       ========================= -->
   <div class="hero">
     <h2>Welcome to the Music World</h2>
 
@@ -207,9 +241,9 @@ body.light #result{
 
   <hr>
 
-  <!-- ABOUT -->
-  <hr>
-
+  <!-- =========================
+       ABOUT SECTION
+       ========================= -->
   <div class="section">
     <h2>About Music</h2>
 
@@ -234,6 +268,9 @@ body.light #result{
 
   <hr>
 
+  <!-- =========================
+       GENRES SECTION
+       ========================= -->
   <div class="section">
     <h2>Top 5 Popular Music Genres</h2>
 
@@ -248,16 +285,22 @@ body.light #result{
 
   <hr>
 
-  <!-- INTERACTION -->
+  <!-- =========================
+       INTERACTIVE SECTION (JS)
+       ========================= -->
   <div class="section">
     <p>Click below and tell us your favourite music genre and artist!</p>
     <button id="genreButton">Share Your Favourite</button>
 
+    <!-- JS output box -->
     <p id="result"></p>
   </div>
 
   <hr>
 
+  <!-- =========================
+       ARTISTS SECTION
+       ========================= -->
   <div class="section">
     <h2>Popular Artists</h2>
 
@@ -290,7 +333,9 @@ body.light #result{
 
   <hr>
 
-  <!-- GALLERY -->
+  <!-- =========================
+       IMAGE GALLERY
+       ========================= -->
   <div class="gallery">
 
     <div class="genre">
@@ -310,63 +355,63 @@ body.light #result{
 
   </div>
 
-  <!-- 🎧 MUSIC PREVIEW  -->
-<div class="section">
-  <h2>🎧 Music Preview </h2>
-  <p>Listen to a featured artist from each genre below.</p>
+  <!-- =========================
+       SPOTIFY PREVIEW SECTION
+       ========================= -->
+  <div class="section">
+    <h2>🎧 Music Preview </h2>
+    <p>Listen to a featured artist from each genre below.</p>
 
-  <div class="spotify-grid">
+    <div class="spotify-grid">
 
-    <!-- POP (Taylor Swift) -->
-    <div>
-      <h3>Pop 🎤 - Taylor Swift</h3>
-      <iframe style="width:300px;height:380px"
-        src="https://open.spotify.com/embed/artist/06HL4z0CvFAxyc27GXpf02"
-        frameborder="0"
-        allow="encrypted-media">
-      </iframe>
+      <!-- Pop -->
+      <div>
+        <h3>Pop 🎤 - Taylor Swift</h3>
+        <iframe src="https://open.spotify.com/embed/artist/06HL4z0CvFAxyc27GXpf02"></iframe>
+      </div>
+
+      <!-- Hip-Hop -->
+      <div>
+        <h3>Hip-Hop 🎧 - Drake</h3>
+        <iframe src="https://open.spotify.com/embed/artist/3TVXtAsR1Inumwj472S9r4"></iframe>
+      </div>
+
+      <!-- Rap -->
+      <div>
+        <h3>Rap 🔥 - Eminem</h3>
+        <iframe src="https://open.spotify.com/embed/artist/7dGJo4pcD2V6oG8kP0tJRR"></iframe>
+      </div>
+
     </div>
-
-    <!-- HIP-HOP (Drake) -->
-    <div>
-      <h3>Hip-Hop 🎧 - Drake</h3>
-      <iframe style="width:300px;height:380px"
-        src="https://open.spotify.com/embed/artist/3TVXtAsR1Inumwj472S9r4"
-        frameborder="0"
-        allow="encrypted-media">
-      </iframe>
-    </div>
-
-    <!-- RAP (Eminem) -->
-    <div>
-      <h3>Rap 🔥 - Eminem</h3>
-      <iframe style="width:300px;height:380px"
-        src="https://open.spotify.com/embed/artist/7dGJo4pcD2V6oG8kP0tJRR"
-        frameborder="0"
-        allow="encrypted-media">
-      </iframe>
-    </div>
-
   </div>
-</div>
 
 </div>
 
 <script>
+
+/* =========================
+   ELEMENT REFERENCES
+   ========================= */
 let button = document.getElementById("genreButton");
 let result = document.getElementById("result");
 let themeToggle = document.getElementById("themeToggle");
 
+/* =========================
+   USER INTERACTION LOGIC
+   ========================= */
 button.addEventListener("click", function () {
 
+  // Collect user input
   let name = prompt("What is your name?");
   let genre = prompt("Your favourite genre?");
   let artist = prompt("Your favourite artist?");
 
+  // Validate input
   if (name && genre && artist) {
 
     alert("Thanks " + name + "! 🎵");
 
+    // Display result on page
     result.innerHTML =
       "<strong>Hello " + name + "!</strong><br>" +
       "Genre: <em>" + genre + "</em><br>" +
@@ -378,10 +423,13 @@ button.addEventListener("click", function () {
 
 });
 
-// THEME TOGGLE
+/* =========================
+   THEME TOGGLE FUNCTION
+   ========================= */
 themeToggle.addEventListener("click", function(){
   document.body.classList.toggle("light");
 });
+
 </script>
 
 </body>
