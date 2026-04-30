@@ -85,6 +85,23 @@ These enhancements are designed to make the Music Landing Page more intuitive, v
 These enhancements aim to make the Music Landing Page more professional, and user-friendly:
 * 💬 Personalized response based on user input ✅
 
+## 🧠 Challenges & Learnings
+🚧 Challenges Faced
+
+1. Ensuring full responsiveness across mobile, tablet, and desktop devices while maintaining a consistent layout and design hierarchy.
+2. Integrating Spotify embeds seamlessly without breaking the layout or affecting page load performance.
+3. Implementing a reliable Light/Dark mode toggle while preserving UI consistency across all sections.
+4. Managing external image assets to ensure fast loading and proper scaling across different screen sizes.
+5. Balancing visual design (gradients, animations, hover effects) with performance and usability.
+
+📚 Key Learnings
+
+1. Improved understanding of responsive design principles using Flexbox and Grid.
+2. Strengthened skills in vanilla JavaScript for DOM manipulation and user interactivity.
+3. Gained experience implementing theme toggles using class-based styling approaches.
+4. Learned how to embed and optimize external media (Spotify iFrames) in a static web project.
+5. Developed a better grasp of building clean, user-focused UI/UX experiences with minimal tooling.
+
 ## 👥 Credit
 Designed and developed by Yvonne Adedeji.
 
